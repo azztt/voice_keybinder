@@ -1,1 +1,14 @@
 requirements according to os's
+
+Linux:
+    portaudio19-dev
+
+Windows:
+
+MacOs:
+
+Common:
+    pyaudio
+    SpeechRecognition
+    pynput
+    google-api-python-client
