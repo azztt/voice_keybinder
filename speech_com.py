@@ -1,7 +1,9 @@
 import speech_recognition as sr
 
 def get_voice_command():
-
+    '''
+    Input
+    '''
     r = sr.Recognizer()
     m = sr.Microphone()
 
