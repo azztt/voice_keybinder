@@ -1,13 +1,20 @@
 # this file will contains modules for simulating key press events
-from pynput.keyboard import Key, Controller
-import time
-keyboar = Controller()
+from pynput.keyboard import Controller
+
+class KeyException(Exception): pass
+
+keyboard = Controller()
 
 def keypress(keys):
-    time.sleep(2)
-    if (len(keys) == 0): return
-    for key in keys:
-        keyboar.press(key)
-    time.sleep(2)
-    for key in keys[::-1]:
-        keyboar.release(key)
+    '''
+    Input -- array of key events
+    Function -- Simulate keypresses
+    '''
+    try:
+        if (len(keys) == 0): return
+        for key in keys:
+            keyboard.press(key)
+        for key in keys[::-1]:
+            keyboard.release(key)
+    except KeyException as e:
+        print(e)
