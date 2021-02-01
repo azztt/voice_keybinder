@@ -14,3 +14,4 @@ Common:
     pynput
     python3-testresources
     google-api-python-client
+    pynput
