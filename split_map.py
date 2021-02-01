@@ -1,5 +1,6 @@
 import re
-from . import keymap
+# from . import keymap
+import keymap
 
 def split(text):
     '''
