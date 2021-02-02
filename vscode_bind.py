@@ -1,3 +1,5 @@
+import difflib
+
 keym = {
     "cutline": "ctrl+x",
     "copyline":	"ctrl+c",
@@ -157,3 +159,9 @@ keym = {
     "stepinto":	"f11",
     "runbuildtask":	"ctrl+shift+b"
 }
+
+def get_key_com(command):
+    match = difflib.get_close_matches(command, list(keym.keys()))
+    if len(match) > 0:
+        return keym.get(match[0],'NONE')
+    return 'NONE'

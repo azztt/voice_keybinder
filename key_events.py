@@ -1,4 +1,4 @@
-# this file will contains modules for simulating key press events
+# this file will contain modules for simulating key press events
 from pynput.keyboard import Controller
 
 class KeyException(Exception): pass

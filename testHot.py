@@ -2,5 +2,6 @@ from hotkey import hotKey
 
 def testhot():
     print("hot key pressed !")
+    
 
-hotKey("<ctrl>+=", testhot)
+# hotKey("<ctrl>+<shift>+<space>", testhot)

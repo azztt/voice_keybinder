@@ -1,4 +1,6 @@
-bind={
+import difflib
+
+keym={
     "saveall": "ctrl+s",
     "synchronize": "ctrl+alt+y",
     "maximizeeditor": "ctrl+shift+f12",
@@ -117,3 +119,9 @@ bind={
     "viewrecentchanges": "alt+shift+c",
     "openvcspopup": "alt+`",
 }
+
+def get_key_com(command):
+    match = difflib.get_close_matches(command, list(keym.keys()))
+    if len(match) > 0:
+        return keym.get(match[0],'NONE')
+    return 'NONE'
