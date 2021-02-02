@@ -4,8 +4,10 @@ Linux:
     portaudio19-dev
 
 Windows:
+    pywin32
 
 MacOs:
+    AppKit
 
 Common:
     pipwin

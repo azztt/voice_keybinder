@@ -34,5 +34,6 @@ keymap = {
     "home": Key.home,
     "end": Key.end,
     "pageup": Key.page_up,
-    "pagedown": Key.page_down
+    "pagedown": Key.page_down,
+    "cmd": Key.cmd
 }
