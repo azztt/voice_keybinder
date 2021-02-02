@@ -2,7 +2,7 @@ from hotkey import hotKey
 from app import App
 
 # hotkey for making the application listen to user
-spec_key_com = "<ctrl>+<shift>+<space>"
+spec_key_com = "<ctrl>+<shift>+<alt>"
 
 # creating new app instance
 app = App()

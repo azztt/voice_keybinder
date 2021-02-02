@@ -54,7 +54,7 @@ class App:
         cur_window = self.get_cur_window()
 
         # check if vs code is in focus
-        vsc = len(re.findall(r'Visual Studio Code$', cur_window)) > 0
+        vsc = len(re.findall(r'Visual Studio Code$', cur_window)) > 0 or len(re.findall(r'Visual Studio Code - Insiders$', cur_window)) > 0
         
         # check if android studio is in focus
         anst = len(re.findall(r'Android Studio$', cur_window)) > 0

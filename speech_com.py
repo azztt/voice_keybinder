@@ -10,7 +10,7 @@ def get_voice_command(r, m):
 
     # r.energy_threshold = threshold
     with m as source:
-        audio = r.listen(source, phrase_time_limit=1)
+        audio = r.listen(source, phrase_time_limit=1.5)
     
     text = ''
 
