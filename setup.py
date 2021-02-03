@@ -28,6 +28,7 @@ if __name__ == '__main__':
     this_platform.is_Linux()
     if this_platform.is_windows():
         install(windows)
+        subprocess.run(["python", "-m", "pipwin", "refresh"])
         subprocess.run(["python", "-m", "pipwin", "install", "pyaudio"])
     if this_platform.is_Linux():
         install(linux)
