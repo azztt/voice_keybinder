@@ -36,4 +36,4 @@ Please do not assign hotkey as ctrl+shift+alt. It may cause unexpected error.
 3. It does not support combinations containing clicks and numpad.
 4. Only default keybindings of the supported editors can be used.
 
-**Currently there application run only in the console/terminal. Future updates shall enable full GUI support for easier usage**
+**Currently the application run only in the console/terminal. Future updates shall enable full GUI support for easier usage**
