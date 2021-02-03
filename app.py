@@ -13,6 +13,7 @@ class App:
         this_platform = Platform()
         self.windows = this_platform.is_windows()
         self.linux = this_platform.is_Linux()
+        # self.speak_time = speak_time
         self.r = sr.Recognizer()
         self.m = sr.Microphone()
         with self.m as source:
@@ -45,7 +46,7 @@ class App:
 
         if vsc or anst:
             try:
-                command = speech_com.get_voice_command(self.r, self.m)
+                command = speech_com.get_voice_command(self.r, self.m, self.speak_time)
             except Exception as e:
                 print('Either nothing was spoken or some unexpected error occurred. Please try again !')
         command = command.replace(' ', '')

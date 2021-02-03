@@ -6,7 +6,8 @@ _all_ = [
     "pynput>=1.7.2",
     "keyboard>=0.13.5",
     "testresources>=2.0.1",
-    "google-api-python-client>=1.12.8"
+    "google-api-python-client>=1.12.8",
+    "python-cfonts>=1.4.0"
 ]
 
 windows = ["pywin32>=300","pipwin>=0.5.1"]
