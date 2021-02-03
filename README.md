@@ -16,7 +16,7 @@ Please ensure that your system has Python version 3.x.x installed before using t
 
 ### Steps to use
 1. Clone this repository
-2. Run ```pip install -r requirements.txt```
+2. Run ```pip install -r requirements.txt``` or ```pip3 install -r requirements.txt```
 3. Run ```python main_driver.py``` or ```python3 main_driver.py```
 4. Wait for initial setup before every run (Just a few seconds)
 5. Now press hotkey combination to start command listener
