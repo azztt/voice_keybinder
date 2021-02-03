@@ -7,7 +7,7 @@ keyboard = Controller()
 
 def keypress(keys):
     '''
-    Input -- array of key events
+    Input -- array of key events\n
     Function -- Simulate keypresses
     '''
     try:

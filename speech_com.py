@@ -1,8 +1,10 @@
 import speech_recognition as sr
 
+class NoComException(Exception): pass
+
 def get_voice_command(r, m):
     '''
-    Input -- nothing
+    Input -- nothing\n
     Ouput -- recognize text from speech
     '''
     with m as source:
@@ -12,9 +14,9 @@ def get_voice_command(r, m):
 
     try:
         text = r.recognize_google(audio)
-    except Exception as e:
-        text = ''
-        print(e)
-        print("Either nothing was spoken or some unexpected error occurred. Please try again !")
+    except NoComException as e:
+        raise
+        # text = ''
+        # print("Either nothing was spoken or some unexpected error occurred. Please try again !")
 
     return text

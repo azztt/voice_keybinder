@@ -121,6 +121,12 @@ keym={
 }
 
 def get_key_com(command):
+    '''
+    Input -- command string in all lowercase without any spaces\n
+    Function -- matches closest command from predefined list\n
+    Output -- key combination of the closest command matched from 
+    android studio bindings key list
+    '''
     match = difflib.get_close_matches(command, list(keym.keys()))
     if len(match) > 0:
         return keym.get(match[0],'NONE')

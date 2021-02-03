@@ -19,7 +19,9 @@ class Platform:
 
 
     def is_windows(self):
+        '''Returns True is detected system is Windows else False'''
         return self.platform == "Windows"
 
     def is_Linux(self):
+        '''Returns True is detected system is Linux else False'''
         return self.platform == "Linux"

@@ -4,8 +4,9 @@ import keymap
 
 def split(text):
     '''
-    Input -- plain text you want to split
-    Function -- Splits into array of array of single elements
+    Input --\n
+    \ttext: str, Plain text you want to split\n
+    Function -- Splits into array of array of single elements\n
     Output -- Array of array of strings
     '''
     arr = []
@@ -16,8 +17,9 @@ def split(text):
 
 def map(arr):
     '''
-    Input -- Splits into array of array of single elements
-    Function -- Maps special keys to corresponding object
+    Input --\n
+    \tarr: array of array of single elements\n
+    Function -- Maps special keys to corresponding object\n
     Output -- Corrected array(To be directly used in key_events)
     '''
     for el in arr:
