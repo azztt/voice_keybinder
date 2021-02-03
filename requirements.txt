@@ -17,3 +17,4 @@ Common:
     python3-testresources
     google-api-python-client
     difflib
+    keyboard

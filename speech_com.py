@@ -5,10 +5,6 @@ def get_voice_command(r, m):
     Input -- nothing
     Ouput -- recognize text from speech
     '''
-    # r = sr.Recognizer()
-    # m = sr.Microphone()
-
-    # r.energy_threshold = threshold
     with m as source:
         audio = r.listen(source, phrase_time_limit=1.5)
     
