@@ -37,3 +37,7 @@ Please do not assign hotkey as ctrl+shift+alt. It may cause unexpected error.
 4. Only default keybindings of the supported editors can be used.
 
 **Currently the application runs only in the console/terminal. Future updates shall enable full GUI support for easier usage**
+
+$$
+a^2 + b^2 = \int_{a}x dx
+$$
